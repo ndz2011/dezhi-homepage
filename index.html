@@ -3,138 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Name]'s Website</title>
+    <title>Dezhi Ni - Personal Website</title>
     <style>
-        /* General reset: Remove default margin/padding for consistent layout across browsers */
-        * {
+        /* Exact replica of academic personal website style - clean, minimal, professional */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #000;
+            background-color: #fff;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            line-height: 1.65;
+            font-size: 14px;
         }
-        /* Base body style: Clean typography, fixed max-width for readability, minimal color scheme */
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #000;
-            background: #fff;
-            max-width: 950px;
+        .container {
+            max-width: 900px;
             margin: 40px auto;
             padding: 0 20px;
-            line-height: 1.7;
-            font-size: 16px;
         }
-        /* Site title style: Main header with bottom border for visual separation */
-        .site-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 30px;
+        /* Header - site title & main navigation */
+        .header {
             border-bottom: 1px solid #ccc;
-            padding-bottom: 10px;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
         }
-        /* Navigation link list: Unstyled list for main site navigation */
-        .link-list {
+        .site-title {
+            font-size: 22px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+        .main-nav {
             list-style: none;
-            margin-bottom: 40px;
+            padding: 0;
+            margin: 0;
         }
-        .link-list li {
-            margin: 8px 0;
-            padding-left: 5px;
+        .main-nav li {
+            display: inline-block;
+            margin-right: 18px;
         }
-        .link-list a {
+        .main-nav a {
             color: #000;
             text-decoration: none;
+            font-size: 14px;
         }
-        .link-list a:hover {
+        .main-nav a:hover {
             text-decoration: underline;
         }
-        /* Section heading style: Sub-header for content categories (news, publications, etc.) */
-        h2 {
-            font-size: 18px;
+        /* Content sections - match Anthony's resume/publications layout */
+        .section {
+            margin-bottom: 35px;
+        }
+        .section-title {
+            font-size: 16px;
             font-weight: bold;
-            margin: 35px 0 15px 0;
-            padding-left: 5px;
+            margin: 25px 0 12px 0;
+            padding: 0;
+            border: none;
         }
-        /* Content block style: Standard layout for news, publications and project entries */
-        .content-block {
-            margin: 12px 0;
-            padding-left: 10px;
+        /* Publication/experience entry styling - core of Anthony's layout */
+        .entry {
+            margin: 8px 0;
+            padding-left: 0;
         }
-        .content-block small {
-            color: #666;
-            font-size: 14px;
-            font-style: normal;
+        .entry small {
+            color: #555;
+            font-size: 13px;
         }
-        /* Contact section style: Footer contact info with top border for separation */
+        /* Software/tools section (match Anthony's WordSmith/ANTConc style) */
+        .software-list {
+            list-style: none;
+            padding: 0;
+        }
+        .software-list li {
+            margin: 10px 0;
+        }
+        .software-list a {
+            color: #000;
+            text-decoration: underline;
+        }
+        /* Contact/footer section */
         .contact {
             margin-top: 50px;
             padding-top: 15px;
             border-top: 1px solid #ccc;
-            font-size: 15px;
+            font-size: 13px;
         }
-        .contact a {
-            color: #000;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
+        /* Anchor link styling (match in-page jump behavior) */
+        a.anchor {
+            display: block;
+            position: relative;
+            top: -20px;
+            visibility: hidden;
         }
     </style>
 </head>
 <body>
-    <!-- Main site title (displayed at the top of the page) -->
-    <div class="site-title">[Your Name]'s Website</div>
+    <div class="container">
+        <!-- Header: Exact match to Anthony's site title + main nav -->
+        <div class="header">
+            <div class="site-title">[Your Full Name]</div>
+            <ul class="main-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#software">Software</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
 
-    <!-- Main navigation menu (links to key sections of the site) -->
-    <ul class="link-list">
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#latest-news">Latest News</a></li>
-        <li><a href="#publications">Publications & Presentations</a></li>
-        <li><a href="#software">Software / Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+        <!-- About Section (match Anthony's brief bio) -->
+        <div class="section" id="about">
+            <span class="anchor" id="about"></span>
+            <h2 class="section-title">About</h2>
+            <p>[Brief professional bio: e.g. I am a researcher specializing in computational linguistics, with a focus on corpus linguistics and natural language processing. My work centers on developing tools and methodologies for linguistic analysis.]</p>
+            <p>Affiliation: [Your University/Institution] | [Your Position: e.g. Associate Professor / PhD Candidate]</p>
+        </div>
 
-    <!-- Latest news section (updates on professional activities) -->
-    <h2 id="latest-news">Latest News</h2>
-    <div class="content-block">
-        [Year] - [Your Professional Update]<br>
-        <small>e.g. New research publication / Project completion / Conference attendance</small>
-    </div>
-    <div class="content-block">
-        [Year] - [Your Professional Update]<br>
-        <small>e.g. New software tool release / Invited talk at an event / Research grant award</small>
-    </div>
+        <!-- Resume Section (match Anthony's structured resume layout) -->
+        <div class="section" id="resume">
+            <span class="anchor" id="resume"></span>
+            <h2 class="section-title">Resume</h2>
 
-    <!-- Publications & Presentations section (academic/professional outputs) -->
-    <h2 id="publications">Publications & Presentations</h2>
-    <div class="content-block">
-        [Year] - [Title of Book/Journal Article/Chapter]<br>
-        <small>[Publisher/Journal Name] | Co-authors: [Name1], [Name2] (if applicable)</small>
-    </div>
-    <div class="content-block">
-        [Year] - [Title of Conference Presentation/Poster]<br>
-        <small>[Conference Name], [Location] | Presentation type: Oral/Poster</small>
-    </div>
+            <!-- Education -->
+            <h3 style="font-size:14px; font-weight:bold; margin:10px 0 5px 0;">Education</h3>
+            <div class="entry">2020 - 2023: MA, Tianjin Foreign Studies University, Tianjin, China<br>
+                <small>Thesis/Dissertation:  | Supervisor: [Name]</small>
+            </div>
+            <div class="entry">[Year] - [Year]: [Degree], [University Name], [Location]</div>
 
-    <!-- Software / Projects section (tools, code or personal projects) -->
-    <h2 id="software">Software / Projects</h2>
-    <div class="content-block">
-        [Project/Software Name] [Version Number]<br>
-        <small>[Brief description: e.g. Open-source tool for data analysis / Personal research project]</small>
-    </div>
+            <h3 style="font-size:14px; font-weight:bold; margin:15px 0 5px 0;">Employment</h3>
+            <div class="entry">[Year] - Present: [Position], [Institution Name], [Location]<br>
+                <small>Research focus: [Key research areas]</small>
+            </div>
+            <div class="entry">[Year] - [Year]: [Position], [Institution Name], [Location]</div>
 
-    <!-- Resume section (link to full professional resume/CV) -->
-    <h2 id="resume">Resume</h2>
-    <div class="content-block">
-        <a href="[Link to Your Resume (PDF/Page)]">View Full Resume</a><br>
-        <small>Includes education, employment history, research interests and professional activities</small>
-    </div>
+            <h3 style="font-size:14px; font-weight:bold; margin:15px 0 5px 0;">Research Interests</h3>
+            <div class="entry">[Interest 1], [Interest 2], [Interest 3], [Interest 4]</div>
+        </div>
 
-    <!-- Contact information section (professional contact details) -->
-    <div class="contact" id="contact">
-        For inquiries and professional correspondence: <br>
-        GitHub: <a href="[Your GitHub URL]">[Your GitHub Username]</a> | 
-        Email: <a href="mailto:[Your Professional Email]">[Your Professional Email]</a> | 
-        [Optional: LinkedIn/Twitter] <a href="[Your Social URL]">[Your Social Handle]</a>
-    </div>
+        <!-- Publications Section (exact match to Anthony's publications layout) -->
+        <div class="section" id="publications">
+            <span class="anchor" id="publications"></span>
+            <h2 class="section-title">Publications & Presentations</h2>
+            
+            <h3 style="font-size:14px; font-weight:bold; margin:10px 0 5px 0;">Books</h3>
+            <div class="entry">[Year]. [Your Last Name], [Your Initials]. (Author). <i>[Book Title]</i>. [Publisher Name].</div>
+            
+            <h3 style="font-size:14px; font-weight:bold; margin:15px 0 5px 0;">Journal Articles</h3>
+            <div class="entry">[Year]. [Your Last Name], [Your Initials], & [Co-author Last Name], [Co-author Initials]. [Article title]. <i>[Journal Name]</i>, [Volume]([Issue]), [Page numbers].</div>
+            
+            <h3 style="font-size:14px; font-weight:bold; margin:15px 0 5px 0;">Conference Presentations</h3>
+            <div class="entry">[Year]. [Your Last Name], [Your Initials]. [Presentation title]. Paper presented at [Conference Name], [Location].</div>
+        </div>
 
+        <!-- Software Section (match Anthony's ANTConc/WordSmith style) -->
+        <div class="section" id="software">
+            <span class="anchor" id="software"></span>
+            <h2 class="section-title">Software & Tools</h2>
+            <ul class="software-list">
+                <li><strong>[Tool Name] [Version]</strong> - [Brief description: e.g. A free corpus analysis tool for Windows/macOS/Linux]<br>
+                    <small>Download: <a href="[Download Link]">GitHub</a> | Documentation: <a href="[Docs Link]">User Guide</a></small>
+                </li>
+                <li><strong>[Tool Name] [Version]</strong> - [Brief description: e.g. A web-based text annotation tool for linguistic research]<br>
+                    <small>Access: <a href="[Access Link]">Online Demo</a> | Source Code: <a href="[Code Link]">GitHub</a></small>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Projects Section (complementary to software, match Anthony's project layout) -->
+        <div class="section" id="projects">
+            <span class="anchor" id="projects"></span>
+            <h2 class="section-title">Research Projects</h2>
+            <div class="entry">[Year] - [Year]: [Project Title] (Principal Investigator/Co-Investigator)<br>
+                <small>Funding Body: [Name] | Grant Number: [Number] | Total Funding: [Amount]</small>
+            </div>
+            <div class="entry">[Year] - [Year]: [Project Title] (Collaborator)<br>
+                <small>Partner Institutions: [Name 1], [Name 2]</small>
+            </div>
+        </div>
+
+        <!-- Contact Section (match Anthony's contact layout) -->
+        <div class="contact" id="contact">
+            <span class="anchor" id="contact"></span>
+            <h2 class="section-title">Contact</h2>
+            <p>Email: <a href="mailto:[your-email@domain.com]">your-email@domain.com</a><br>
+               Office: [Building/Room Number], [Institution Address]<br>
+               Social: <a href="[GitHub Link]">GitHub</a> | <a href="[LinkedIn Link]">LinkedIn</a> | <a href="[Twitter/Bluesky Link]">Twitter/Bluesky</a></p>
+        </div>
+    </div>
 </body>
 </html>
